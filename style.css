@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+header{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: chartreuse;
+}
+.logo{
+    height: 70px;
+    width: 60px;
+}
+img{
+    height: 65px;
+    width: 55px;
+    margin-top: 7px;
+    margin-left: 30px;
+}
+p{
+    position: absolute;
+    color: rgb(44, 3, 247);
+    top: 25px;
+    left: 100px;
+    font-size: xx-large;
+}
+button{
+    position:relative;
+    justify-content: space-evenly;
+    width: 10%;
+    padding: 10px 15px;
+    bottom: 50px;
+    left: 40%;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(212, 242, 58);
+}
+.dropdown{
+    position: absolute; 
+    display: none;
+    background-color: rgb(190, 222, 245);
+    list-style: none;
+    height: 200px;
+    width: 130px;
+    top: 39px;
+    left: 6px;
+    line-height: 2;
+    font-size: x-large; 
+     
+}
+.menu:hover .dropdown{
+    display:block;    
+}
+a:hover{
+    background-color: rgb(202, 249, 29);
+}
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    margin-left: 80px;
+    background-color: rgb(74, 219, 245);
+    top: 150px;
+    left: 39%;
+    width: 150px;
+}
+.dropdown li:hover .dropdown-menu{
+    display: block;  
+}
+body{
+    background-image:url(/images/pexels-photo-949587.webp);
+    background-size: cover;
+}
+footer{
+    position: absolute;
+    background-color: blue;
+    height: 80px;
+    width: 100%;
+    margin-top: 40%;
+}
+.port{
+    margin-left: 43%;
+    margin-top: 30px;
+}
+.carousel{
+    height: 50vh;
+    width: 50%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(92, 172, 243);
+}
+.slider{
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+}
+.images{
+    display: flex;
+    width: 100%;
+}
+.images img{
+    height: 300px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input{
+    display: none;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 6px;
+}
+.dots label:hover{
+    background-color: red;
+}
+#img1:checked ~ .m1{
+    margin-left: 0;
+}
+#img2:checked ~ .m2{
+    margin-left: -100%;
+}
+#img3:checked ~ .m3{
+    margin-left: -200%;    
+}
+
+
+
+
+
+
+
+
